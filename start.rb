@@ -57,4 +57,27 @@ greet_other(vj, person)
 #
 #
 
+weekdays = ["mon", "tue", "wed", "thu", "fri"]
+p weekdays[3]
+
+weekdays = { 1 => "mon",
+             2 => "tue",
+             3 => "wed",
+             4 => "thu",
+             5 => "fri" }
+p weekdays[3]
+p "========="
+p weekdays.find { |key, name| name == "thu" }.first
+p "========="
+
+weeknum = { "mon" => 1,
+            "tue" => 2,
+            "wed" => 3,
+            "thu" => 4,
+            "fri" => 5 }
+p weeknum["wed"]
+
+day_of_interes = "fri"
+p weeknum[day_of_interes]
+
 3.times { puts "I love Ruby" }
